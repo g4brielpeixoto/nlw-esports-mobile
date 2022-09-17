@@ -11,7 +11,7 @@ import logoImage from '../assets/logo-nlw-esports.png'
 import { THEME } from '../theme'
 import { Heading } from '../components/Heading'
 import { DuoCard, DuoCardProps } from '../components/DuoCard'
-import { MaskSad } from 'phosphor-react-native'
+import { SmileyXEyes } from 'phosphor-react-native'
 
 export function Game() {
   const [duos, setDuos] = useState<DuoCardProps[]>([])
@@ -55,7 +55,7 @@ export function Game() {
           style={styles.containerList}
           ListEmptyComponent={() => (
             <View style={styles.emptyListContainer}>
-              <MaskSad color={THEME.COLORS.CAPTION_300} size={80} />
+              <SmileyXEyes color={THEME.COLORS.CAPTION_300} size={80} />
               <Text style={styles.emptyListText}>Nenhum anúncio publicado</Text>
             </View>
           )}
